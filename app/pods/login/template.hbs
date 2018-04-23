@@ -1,0 +1,22 @@
+<div class="application-page">
+  <h2>Login</h2>
+
+  <div class="form-control top20">
+    <label for="id">ID:<span class="required">*</span></label>
+    {{input name='id' type='text' value=id}}
+  </div>
+
+  <div class="form-control top20">
+    <label for="password">Password:<span class="required">*</span></label>
+    {{input name='password' type='password' value=password}}
+  </div>
+
+  <div class="top20" style="display: flex; justify-content: space-between;">
+    {{#link-to 'register'}}
+      Don't have an account?
+    {{/link-to}}
+    <button {{action 'login'}}>Login</button>
+  </div>
+</div>
+
+{{outlet}}
