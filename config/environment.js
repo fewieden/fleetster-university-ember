@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'fleetster-university-ember',
-	podModulePrefix: 'fleetster-university-ember/pods',
+	  podModulePrefix: 'fleetster-university-ember/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',

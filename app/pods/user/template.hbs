@@ -1,0 +1,19 @@
+<div class="application-page">
+  <h2>User</h2>
+
+  <div class="form-control top20">
+    <label for="name">Name:</label>
+    {{input name='name' type='text' value=model.name disabled=true}}
+  </div>
+
+  <div class="form-control top20">
+    <label for="email">E-Mail:</label>
+    {{input name='email' type='text' value=model.email disabled=true}}
+  </div>
+
+  <div class="top20">
+    <button {{action 'logout'}}>Logout</button>
+  </div>
+</div>
+
+{{outlet}}
