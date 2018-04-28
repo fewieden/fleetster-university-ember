@@ -10,8 +10,7 @@ export default Controller.extend({
         return this.transitionToRoute('user', {id: this.get('id')});
       }
 
-      alert('Login failed!');
-      this.transitionToRoute('register');
+      this.get('toast').error('Login failed!');
     }
   }
 });

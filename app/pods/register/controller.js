@@ -22,11 +22,11 @@ export default Controller.extend({
       });
 
       if (!response.error) {
-        alert(`ID: ${response._id}`);
+        this.get('toast').info(`ID: ${response._id}`);
         return this.transitionToRoute('login');
       }
 
-      alert('Registration failed!');
+      this.get('toast').error('Registration failed!');
     }
   }
 });
