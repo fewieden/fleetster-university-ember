@@ -1,5 +1,6 @@
 import Service from '@ember/service';
 import { inject as service } from '@ember/service';
+import $ from 'jquery';
 
 const defaultOptions = {
   type: 'GET',
@@ -20,6 +21,6 @@ export default Service.extend({
       options.headers.authentication = this.get('auth').token;
     }
 
-    return Ember.$.ajax(options);
+    return $.ajax(options);
   }
 });
